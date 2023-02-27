@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.all-items-main li,.navbar li{
+  display: inline-block;
+  padding: 1rem;
+  transition: all 0.5s;
+}
+.all-items-main li a,.navbar li a{
+text-decoration: none;
+color: black;
+cursor: pointer;
+}
+.navbar li:hover{
+  scale: 1.1;
+}
+.navbar li:active{
+  scale: 0.95;
+}
+
+.item-cards .item-card{
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+  border-radius:10px ;
+  background: #717297;
+  margin: 1rem;
+  width:16rem;
+  text-align: center;
+}
+
+.item-cards .item-card button{
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 2rem ;
+  border: none;
+  font-weight: 800;
+  width:5rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.item-cards .item-card .edit-buttons button{
+    min-width: fit-content;
+}
+.item-cards .item-card button:hover{
+  scale: 1.1;
+  color: rgb(255, 255, 255);
+}
+.item-cards.item-card button:active{
+  scale: 0.85;
+}
+.item-cards .item-card .delete-button{
+  background-color: rgb(255, 170, 170);
+  color: rgb(0, 0, 0);
+}
+.item-cards .item-card .delete-button:hover{
+  background-color: rgb(255, 27, 27);
+}
+.item-cards .item-card .edit-button{
+  background-color: rgb(184, 255, 251);
+  color: rgb(0, 0, 0);
+}
+.item-cards .item-card .edit-button:hover{
+  background-color: rgb(27, 209, 255);
+}
+
+.form-container {
+  width: 20%;
+  height: 50%;
+  margin: 1px auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form h1 {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 12px;
+}
+form input {
+  font-size: 14px;
+  padding: 6px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: .2px solid darkgrey;
+}
+textarea {
+  font-size: 14px;
+  padding: 6px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: .2px solid darkgrey;
+}
+#submitButton {
+  padding: 6px 12px;
+  margin: 14px auto;
+  background-color: #bd5b14;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 15px;
+  color: white;
+  
+}
+#submitButton:hover {
+  filter: brightness(80%);
+}
+
+.buttons{
+  padding: 6px 12px;
+  margin: 14px auto;
+  background-color: red;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 15px;
+  color: white;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
